@@ -5,3 +5,7 @@ Mini galeria
 1. Bootstrap
 2. jQuery
 3. Webpack
+
+-------
+
+### Em breves mais atualizações
