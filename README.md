@@ -8,4 +8,4 @@ Mini galeria
 
 -------
 
-### Em breves mais atualizações
+### Em breve mais atualizações
