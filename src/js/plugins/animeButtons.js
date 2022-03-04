@@ -4,9 +4,9 @@ import { onLoadHtmlSuccessCallback } from '../core/inclues';
 
 const duration = 300;
 
-function filterByAnime(anime) {
-    $('[wm-anime]').each(function (i, e) {
-        const isTarget = $(this).attr('wm-anime') === anime || anime === null;
+function filterByAnime(name) {
+    $('[wm-name]').each(function (i, e) {
+        const isTarget = $(this).attr('wm-name') === name || name === null;
         if (isTarget) {
             $(this).parent().removeClass('d-none');
             $(this).fadeIn(duration)
@@ -20,8 +20,8 @@ function filterByAnime(anime) {
 $.fn.animesButtons = function () {
     const animes = new Set;
 
-    $('[wm-anime]').each(function (i, e) {
-        animes.add($(e).attr('wm-anime'));
+    $('[wm-name]').each(function (i, e) {
+        animes.add($(e).attr('wm-name'));
     })
 
     const btns = Array.from(animes).map((anime) => {
@@ -38,5 +38,5 @@ $.fn.animesButtons = function () {
     return this;
 }
 onLoadHtmlSuccessCallback(function () {
-    $('[wm-animes-buttons]').animesButtons();
+    $('[wm-names-buttons]').animesButtons();
 });

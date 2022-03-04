@@ -7,4 +7,5 @@ import 'bootstrap';
 
 // Meus arquivos JS
 import './js/core/inclues';
-import './js/plugins/animeButtons'
+import './js/plugins/animeButtons';
+import './js/plugins/imgsElements';

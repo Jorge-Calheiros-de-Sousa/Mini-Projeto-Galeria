@@ -35,7 +35,8 @@ module.exports = {
         new CopyWebPackPlugin({
             patterns: [
                 { context: 'src/', from: '**/*.html' },
-                { context: 'src/', from: 'img/**/*' }
+                { context: 'src/', from: 'img/**/*' },
+                { context: 'src/', from: '**/*.json' }
             ]
         })
     ],
