@@ -2,6 +2,6 @@
 Mini galeria
 
 ## Tecnologias usadas
--- bootstrap
--- jQuery
--- WebPack
+1. Bootstrap
+2. jQuery
+3. Webpack
